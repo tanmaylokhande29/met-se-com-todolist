@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container{
+    height: 100vh;
+}
+
+.imgContainer{
+    width: 95%;
+    /* border: 2px solid red; */
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 20px auto;
+    height: 50%;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(38, 152, 106, 0.5)),url(./images/bgproject.jpg);
+    background-size: cover;
+    
+}
+.imgContainer img{
+    width: 100%;
+    /* height: 30%; */
+   object-fit:cover;
+    background-color: black;
+}
+.upper{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-color: brown;
+    
+}
+.upper button{
+    background-color: blue;
+    transform: translate(0, -349px);
+    padding: 0.1px 6px;
+    outline: none;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold; 
+}
+.upper h3{
+    color:rgb(255, 255, 255);
+    font-size: 2rem;
+    transform: translate(0, -349px);
+    background-color:rgb(128, 115, 115);
+    opacity: 0.8;
+    /* border-bottom: black; */
+    padding: 4px;
+    border-radius: 20px;
+}
+
+
+/* Main Card */
+
+.mainCard{
+    width: 30%;
+    /* padding: 10px; */
+    box-shadow: 2px 2px 14px black;
+    transform: translate(0, 130px);
+    /* background-color: white; */
+    border-radius: 22px;
+    margin: 0 auto;
+    /* position: fixed; */
+    /* border: 2px solid red; */
+}
+
+/* .upper{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.upper button{
+    background-color: blue;
+    padding: 6px 14px;
+    outline: none;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+.upper h3{
+    color: white;
+    font-size: 2rem;
+} */
+
+.taskList{
+    background-color: white;
+    border-radius:30px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px black;
+    height: fit-content;
+    overflow-y: scroll;
+    /* height: 500px; */
+    margin-top: -350px;
+    position:static;
+    /* translate:  200px; */
+
+}
+
+.task{
+    padding: 6px 0;
+    border-bottom: 1px solid rgb(14, 14, 14);
+    border-bottom-left-radius: 1px solid gray; 
+    border-bottom: black;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskDetails h4{
+    font-size: 1.8rem;
+}
+
+.taskDetails p{
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+.delBtn a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: red;
+}
+
+.priorityMark{
+    /* background: #367BF5; */
+    font-size: 18px;
+    margin: 0 20px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    /* position: absolute; */
+    /* top: 50%; */
+}
+
+/* Popup Card */
+
+.popupTODO{
+    background: white;
+    border: 2px solid rgb(0, 0, 0);
+    width: fit-content;
+    padding: 20px 50px;
+    border-radius: 18px;
+    position: absolute;
+    left: 42%;
+    transform: translate(0%, -120%) scale(0.01);
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.todoName{
+    margin: 6px 0;
+}
+.todoDescription{
+    margin: 6px 0;
+}
+.todoPriority{
+    margin: 6px 0; 
+}
+
+#todoName{
+    padding: 10px 20px;
+    background-color: #c481ff;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid #367bf5;
+}
+#todoDescription{
+    padding: 10px 20px;
+    border: 2px solid #367bf5;
+    background-color: #c481ff;
+    border-radius: 20px;
+    resize: none;
+}
+#todoPriority{
+    border: 2px solid #367bf5;
+    padding: 10px 20px;
+    background-color: #c481ff;
+    outline: none;
+    border-radius: 20px;
+}
+
+#saveBtn{
+    background-color: #367bf5;
+    border: none;
+    outline: none;
+    padding: 4px 8px;
+    border-radius: 14px;
+    color: white;
+    font-weight: bold;
+    /* margin: 0px auto; */
+}
+
+.saveBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+#canBtn{
+    color:aliceblue;
+    background-color: red;
+    border-radius: 20px;
+}
+
+.inpFieldNames{
+    color: gray;
+    font-size: 0.8rem;
+    padding: 8px;
+}
+
+/* Button clicked css */
+
+.showPopup{
+    visibility: visible;
+    transform: scale(1);
+    transform: translate(0%, -100%);
+}
+.closePopup{
+    visibility: hidden;
+    transform: scale(0.01);
+    transform: translate(0%, -120%);
+}

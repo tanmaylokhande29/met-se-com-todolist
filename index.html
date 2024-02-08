@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project test</title>
+
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div class="container">
+        <div class="imgContainer">
+            <img src="./images/sergei-a--heLWtuAN3c-unsplash.jpg" alt="">
+        </div>
+
+        <div class="mainCard">
+
+            <section class="upper">
+                <button id="addTodoButton">Add Todo</button>    
+                <h3>TODO</h3>
+            </section>
+
+            <section class="taskList">
+
+                <!-- Task div start -->
+               
+                <div class="task">
+
+                     <div class="taskDetails">
+                        <h4>Complete HTML <span class="priorityMark" style="background-color: #367bf7;">!!</span></h4>
+                        <p>learn all Html semantic tags ,learn new article tag.</p>
+                    </div>
+
+                    <div class="delBtn">
+                        <a href="#">Delete</a>
+                        <!-- <button ><i class="fa fa-trash" aria-hidden="true" style="backgroud-color: red"></i>Delete</button> -->
+                        <!-- <button type="button" "><i class="fa fa-pencil" aria-hidden="true"></i> </button> -->
+                    </div>
+
+                </div>
+
+                <div class="task">
+
+                     <div class="taskDetails">
+                        <h4> Take notes <span class="priorityMark" style="background-color: hsl(0, 91%, 59%);">!!!</span></h4>
+                        <p>Take notes regarding css fundamentals</p>
+                    </div>
+                    <div class="delBtn">
+                        <a href="#">Delete</a>
+                    </div>
+
+                </div>
+
+                <div class="task">
+
+                     <div class="taskDetails">
+                        <h4>Water plants <span class="priorityMark" style="background-color: #2fa85f;">!</span></h4>
+                        <p>Water all the plants in the garden</p>
+                    </div>
+                    <div class="delBtn">
+                        <a href="#">Delete</a>
+                    </div>
+
+                </div>
+
+                <div class="task">
+
+                     <div class="taskDetails">
+                        <h4>learn map() method<span class="priorityMark" style="background-color: hsl(0, 91%, 59%);">!!!</span></h4>
+                        <p>Learn How to implement map method in javascript</p>
+                    </div>
+                    <div class="delBtn">
+                        <a href="#">Delete</a>
+                    </div>
+
+                </div>
+                <!-- Task div end -->
+
+            </section>
+
+        </div>
+
+
+        <div class="popupTODO closePopup">
+            <div class="todoName">
+                <p class="inpFieldNames">TODO name</p>
+                <input type="text" name="" id="todoName">
+            </div>
+
+            <div class="todoDescription">
+                <p class="inpFieldNames">Description</p>
+                <textarea name="" id="todoDescription" cols="20" rows="4"></textarea>
+            </div>
+
+            <div class="todoPriority">
+                <p class="inpFieldNames">Priority</p>
+                <input type="text" name="" id="todoPriority">
+            </div>
+
+            <div class="saveBtn">
+                <button id="saveBtn">Save</button>
+                <button id="canBtn">Cancel</button>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
